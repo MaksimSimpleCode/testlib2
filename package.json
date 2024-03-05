@@ -1,6 +1,6 @@
 {
   "name": "sb-test-new-webpack-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.ts",
   "author": "D1i",
   "license": "",
@@ -9,6 +9,7 @@
   "dependencies": {
     "classnames": "^2.3.2",
     "react": "^18.0.10",
+    "react-scripts": "^5.0.1",
     "webpack": "^5.90.3"
   },
   "devDependencies": {
