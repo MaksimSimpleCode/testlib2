@@ -1,0 +1,1014 @@
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+
+}
+
+/* numbers */
+$roundness-input: 2px;
+$roundness-label: 2px;
+$roundness-password-helper: 2px;
+$roundness-multibutton: 4px;
+$roundness-search-input: 4px;
+$roundness-task-tag: 4px;
+$roundness-button: 8px;
+$roundness-detail: 8px;
+$roundness-dropdown-list: 8px;
+$roundness-hint: 8px;
+$roundness-progress-bar: 8px;
+$roundness-toast: 8px;
+$roundness-context-menu: 12px;
+$roundness-island: 12px;
+$roundness-modal-window: 12px;
+$roundness-toggle: 16px;
+$roundness-breadcrumps-record-icon: 8px;
+$roundness-comment-item: 8px;
+$roundness-context-menu-item: 8px;
+$roundness-datepicker-day: 10px;
+$roundness-detail-action: 6px;
+$roundness-dropdown-list-item: 4px;
+$roundness-extended-filter-condition: 2px;
+$roundness-extended-filter-logic-operand: 4px;
+$roundness-header-record: 12px;
+$roundness-header-section: 12px;
+$roundness-html-editor-date: 4px;
+$roundness-html-editor-icon: 4px;
+$roundness-html-editor-info-panel: 8px;
+$roundness-html-editor-actions-panel-icon: 4px;
+$roundness-html-editor-actions-panel-container: 8px;
+$roundness-html-editor-color-picker-item: 4px;
+$roundness-html-editor-color-picker-dropdown: 8px;
+$roundness-html-editor-shortcut-hint: 4px;
+$roundness-html-editor-shortcut-default: 8px;
+$roundness-html-editor-spoiler-icon: 4px;
+$roundness-html-editor-table-icon: 6px;
+$roundness-html-editor-table-island: 6px;
+$roundness-kanban-column-intermediate: 4px;
+$roundness-kanban-card-icon: 6px;
+$roundness-kanban-card: 8px;
+$roundness-kanban-column: 12px;
+$roundness-navigation-panel-icon: 12px;
+$roundness-pagination-container: 8px;
+$roundness-pagination-item-first-or-last: 2px;
+$roundness-pagination-item-default: 6px;
+$roundness-scroller-default: 2px;
+$roundness-scroller-hover: 12px;
+$roundness-search-item: 4px;
+$roundness-search-dropdown: 8px;
+$roundness-section-master-cell: 4px;
+$roundness-section-master-content-block: 12px;
+$roundness-side-menu-item: 4px;
+$roundness-switcher-item: 4px;
+$roundness-switcher-whole: 8px;
+$roundness-table-detail-row: 2px;
+$roundness-table-container: 4px;
+$roundness-table-stage-indicator: 4px;
+$roundness-table-table-section: 12px;
+$roundness-tree-item: 4px;
+$roundness-tree-sort-option: 4px;
+/* Mode 1 */
+/* colors */
+$blue-dark-100: #d1e0ff;
+$blue-dark-200: #b2ccff;
+$blue-dark-25: #f5f8ff;
+$blue-dark-300: #84adff;
+$blue-dark-400: #528bff;
+$blue-dark-50: #eff4ff;
+$blue-dark-500: #2970ff;
+$blue-dark-600: #155eef;
+$blue-dark-700: #004eeb;
+$blue-dark-800: #0040c1;
+$blue-dark-900: #00359e;
+$blue-light-100: #e0f2fe;
+$blue-light-200: #b9e6fe;
+$blue-light-25: #f5fbff;
+$blue-light-300: #7cd4fd;
+$blue-light-400: #36bffa;
+$blue-light-50: #f0f9ff;
+$blue-light-500: #0ba5ec;
+$blue-light-600: #0086c9;
+$blue-light-700: #026aa2;
+$blue-light-800: #065986;
+$blue-light-900: #0b4a6f;
+$error-100: #fee4e2;
+$error-200: #fecdca;
+$error-25: #fffbfa;
+$error-300: #fda29b;
+$error-400: #f97066;
+$error-50: #fef3f2;
+$error-500: #f04438;
+$error-600: #d92d20;
+$error-700: #b42318;
+$error-800: #912018;
+$error-900: #7a271a;
+$gray-100: #f2f4f7;
+$gray-200: #eaecf0;
+$gray-25: #fcfcfd;
+$gray-300: #d0d5dd;
+$gray-400: #98a2b3;
+$gray-50: #f9fafb;
+$gray-500: #667085;
+$gray-600: #475467;
+$gray-700: #344054;
+$gray-800: #1d2939;
+$gray-900: #101828;
+$gray-blue-100: #eaecf5;
+$gray-blue-200: #d5d9eb;
+$gray-blue-25: #fcfcfd;
+$gray-blue-300: #b3b8db;
+$gray-blue-400: #717bbc;
+$gray-blue-50: #f8f9fc;
+$gray-blue-500: #4e5ba6;
+$gray-blue-600: #3e4784;
+$gray-blue-700: #363f72;
+$gray-blue-800: #293056;
+$gray-blue-900: #101323;
+$green-100: #d3f8df;
+$green-200: #aaf0c4;
+$green-25: #fafef5;
+$green-300: #73e2a3;
+$green-400: #3ccb7f;
+$green-50: #edfcf2;
+$green-500: #16b364;
+$green-600: #099250;
+$green-700: #087443;
+$green-800: #095c37;
+$green-900: #084c2e;
+$green-light-100: #bdebd2;
+$green-light-500: #199151;
+$html-editor-blue-100: #cce0ff;
+$html-editor-blue-200: #1d7afc;
+$html-editor-blue-300: #0055cc;
+$html-editor-green-100: #baf3db;
+$html-editor-green-200: #22a06b;
+$html-editor-green-300: #216e4e;
+$html-editor-grey-100: #ffffff;
+$html-editor-grey-200: #98a2b3;
+$html-editor-grey-300: #101828;
+$html-editor-orange-100: #f8e6a0;
+$html-editor-orange-200: #faa53d;
+$html-editor-orange-300: #d97008;
+$html-editor-purple-100: #dfd8fd;
+$html-editor-purple-200: #8270db;
+$html-editor-purple-300: #5e4db2;
+$html-editor-red-100: #ffd2cc;
+$html-editor-red-200: #e34935;
+$html-editor-red-300: #ae2a19;
+$html-editor-turquoise-100: #c1f0f5;
+$html-editor-turquoise-200: #1d9aaa;
+$html-editor-turquoise-300: #206b74;
+$indigo-10: #f9fbff;
+$indigo-100: #e0eaff;
+$indigo-200: #c7d7fe;
+$indigo-25: #f5f8ff;
+$indigo-300: #a4bcfd;
+$indigo-400: #8098f9;
+$indigo-50: #eef4ff;
+$indigo-500: #6172f3;
+$indigo-600: #444ce7;
+$indigo-700: #3538cd;
+$indigo-800: #2d31a6;
+$indigo-900: #2d3282;
+$main-black: #101323;
+$main-white: #ffffff;
+$orange-100: #fdead7;
+$orange-200: #f9dbaf;
+$orange-25: #fefaf5;
+$orange-300: #f7b27a;
+$orange-400: #f38744;
+$orange-50: #fef6ee;
+$orange-500: #ef6820;
+$orange-600: #e04f16;
+$orange-700: #b93815;
+$orange-800: #932f19;
+$orange-900: #772917;
+$orange-dark-100: #ffe6d5;
+$orange-dark-200: #ffd6ae;
+$orange-dark-25: #fff9f5;
+$orange-dark-300: #ff9c66;
+$orange-dark-400: #ff692e;
+$orange-dark-50: #fff4ed;
+$orange-dark-500: #ff4405;
+$orange-dark-600: #e62e05;
+$orange-dark-700: #bc1b06;
+$orange-dark-800: #97180c;
+$orange-dark-900: #771a0d;
+$pink-100: #fce7f6;
+$pink-200: #fcceee;
+$pink-25: #fef6fb;
+$pink-300: #faa7e0;
+$pink-400: #f670c7;
+$pink-50: #fdf2fa;
+$pink-500: #ee46bc;
+$pink-600: #dd2590;
+$pink-700: #c11574;
+$pink-800: #9e165f;
+$pink-900: #851651;
+$purple-100: #f4ebff;
+$purple-200: #e9d7fe;
+$purple-25: #fcfaff;
+$purple-300: #d6bbfb;
+$purple-400: #b692f6;
+$purple-50: #f9f5ff;
+$purple-500: #9e77ed;
+$purple-600: #7f56d9;
+$purple-700: #6941c6;
+$purple-800: #53389e;
+$purple-900: #42307d;
+$rose-100: #ffe4e8;
+$rose-200: #fecdd6;
+$rose-25: #fff5f6;
+$rose-300: #fea3b4;
+$rose-400: #fd6f8e;
+$rose-50: #fff1f3;
+$rose-500: #f63d68;
+$rose-600: #e31b54;
+$rose-700: #c01048;
+$rose-800: #a11043;
+$rose-900: #89123e;
+$success-100: #d1fadf;
+$success-200: #a6f4c5;
+$success-25: #f6fef9;
+$success-300: #6ce9a6;
+$success-400: #32d583;
+$success-50: #ecfdf3;
+$success-500: #12b76a;
+$success-600: #039855;
+$success-700: #027a48;
+$success-800: #05603a;
+$success-900: #054f31;
+$turquoise-300: #a4eae2;
+$turquoise-500: #2eccb9;
+$warning-100: #fef0c7;
+$warning-200: #fedf89;
+$warning-25: #fffcf5;
+$warning-300: #fec84b;
+$warning-400: #fdb022;
+$warning-50: #fffaeb;
+$warning-500: #f79009;
+$warning-600: #dc6803;
+$warning-700: #b54708;
+$warning-800: #93370d;
+$warning-900: #7a2e0e;
+$yellow-100: #fef7c3;
+$yellow-200: #feee95;
+$yellow-25: #fefdf0;
+$yellow-300: #fde272;
+$yellow-400: #fac515;
+$yellow-50: #fefbe8;
+$yellow-500: #eaaa08;
+$yellow-600: #ca8504;
+$yellow-700: #a15c07;
+$yellow-800: #854a0e;
+$yellow-900: #713b12;
+/* Mode 1 */
+/* numbers */
+$spacing-base-0-25m: 1px;
+$spacing-base-0-5m: 2px;
+$spacing-base-m: 4px;
+$spacing-base-1-5m: 6px;
+$spacing-base-2m: 8px;
+$spacing-base-2-5m: 10px;
+$spacing-base-3m: 12px;
+$spacing-base-4m: 16px;
+$spacing-base-5m: 20px;
+$spacing-base-6m: 24px;
+$spacing-base-7m: 28px;
+$spacing-base-8m: 32px;
+$spacing-base-9m: 36px;
+$spacing-base-10m: 40px;
+$spacing-specific-persons-gap: -6px;
+$spacing-specific-island-spacing: $spacing-base-1-5m;
+$spacing-specific-cells-gap: $spacing-base-2m;
+$spacing-specific-content-gap: $spacing-base-4m;
+/* Mode 1 */
+/* numbers */
+$tooltip-min-width: 160px;
+$tooltip-max-width: 500px;
+
+$main-text-secondary: $gray-400;
+
+
+$main-text-primary: $main-black;
+$comment-section-comment-actions-attach-icon-default: $main-text-secondary;
+$components-record-stroke-hover: $indigo-600;
+
+$components-kanban-person-border-hover: $components-record-stroke-hover;
+
+$actions-button-background-danger-default: $error-500;
+$actions-button-background-danger-hover: $error-600;
+$actions-button-background-danger-pressed: $error-700;
+$actions-button-background-danger-secondary-default: $error-25;
+$actions-button-background-danger-secondary-hover: $error-100;
+$actions-button-background-danger-secondary-pressed: $error-300;
+$actions-button-background-default-default: $main-white;
+$actions-button-background-default-hover: $gray-100;
+$actions-button-background-default-pressed: $gray-200;
+$actions-button-background-loading-default: $gray-200;
+$actions-button-background-primary-default: $indigo-600;
+$actions-button-background-primary-hover: $indigo-700;
+$actions-button-background-primary-pressed: $indigo-800;
+$actions-button-background-secondary-default: $indigo-25;
+$actions-button-background-secondary-hover: $indigo-100;
+$actions-button-background-secondary-pressed: $indigo-300;
+$actions-button-background-success-default: $success-500;
+$actions-button-background-success-hover: $success-600;
+$actions-button-background-success-pressed: $success-700;
+$actions-button-background-success-secondary-default: $success-25;
+$actions-button-background-success-secondary-hover: $success-100;
+$actions-button-background-success-secondary-pressed: $success-300;
+$actions-button-border-default: $gray-300;
+$actions-button-border-error: $error-500;
+$actions-button-border-primary: $indigo-600;
+$actions-button-border-secondary: $indigo-500;
+$actions-button-border-success: $success-500;
+$actions-button-border-link-default: $gray-300;
+$actions-button-border-link-hover: $gray-900;
+$actions-button-text-danger: $error-500;
+$actions-button-text-default: $main-white;
+$actions-button-text-loading: $gray-400;
+$actions-button-text-secondary: $indigo-600;
+$actions-button-text-success: $success-500;
+$actions-multiaction-panel-background-default: $gray-900;
+$actions-multiaction-panel-button-background-hover: $gray-700;
+$actions-multiaction-panel-button-text-default: $main-white;
+$choose-elements-checkbox-background-default: $main-white;
+$choose-elements-checkbox-background-disabled: $gray-200;
+$choose-elements-checkbox-background-hover: $indigo-100;
+$choose-elements-checkbox-background-selected: $indigo-600;
+$choose-elements-checkbox-stroke-default: $gray-300;
+$choose-elements-checkbox-stroke-error: $error-500;
+$choose-elements-checkbox-stroke-hover: $indigo-200;
+$choose-elements-checkbox-stroke-selected: $indigo-600;
+$choose-elements-checkbox-stroke-warning: $warning-400;
+$choose-elements-datepicker-day-default: $main-text-primary;
+$choose-elements-datepicker-day-weekend: $error-600;
+$choose-elements-datepicker-day-background-hover: $indigo-50;
+$choose-elements-datepicker-day-background-selected: $indigo-200;
+$choose-elements-dropdown-default: $gray-400;
+$choose-elements-dropdown-stroke: $gray-300;
+$choose-elements-dropdown-subtitle: $gray-blue-500;
+$choose-elements-dropdown-background-default: $main-white;
+$choose-elements-dropdown-item-text-delete: $error-500;
+$choose-elements-dropdown-item-background-hover: $indigo-50;
+$choose-elements-dropdown-item-background-hover-delete: $error-50;
+$choose-elements-dropdown-item-background-selected: $indigo-100;
+$choose-elements-dropdown-star-icon-background-default: $main-white;
+$choose-elements-dropdown-star-icon-background-hover: $yellow-300;
+$choose-elements-dropdown-star-icon-background-selected: $yellow-500;
+$choose-elements-dropdown-star-icon-stroke-default: $gray-300;
+$choose-elements-dropdown-star-icon-stroke-hover: $gray-700;
+$choose-elements-radiobutton-background-default: $main-white;
+$choose-elements-radiobutton-background-disabled: $gray-200;
+$choose-elements-radiobutton-background-hover: $indigo-100;
+$choose-elements-radiobutton-background-selected: $indigo-600;
+$choose-elements-radiobutton-stroke-default: $gray-300;
+$choose-elements-radiobutton-stroke-error: $error-500;
+$choose-elements-radiobutton-stroke-hover: $indigo-200;
+$choose-elements-radiobutton-stroke-selected: $indigo-600;
+$choose-elements-radiobutton-stroke-warning: $warning-400;
+$choose-elements-switcher-background-default: $main-white;
+$choose-elements-switcher-background-disabled: $gray-200;
+$choose-elements-switcher-background-hover: $indigo-100;
+$choose-elements-switcher-background-selected: $indigo-600;
+$choose-elements-switcher-divider-default: $gray-300;
+$choose-elements-switcher-stroke-default: $gray-300;
+$choose-elements-switcher-stroke-error: $error-500;
+$choose-elements-switcher-text-selected: $main-white;
+$choose-elements-toggle-switcher: $main-white;
+$choose-elements-toggle-background-default: $gray-300;
+$choose-elements-toggle-background-hover: $gray-400;
+$choose-elements-toggle-background-selected: $indigo-600;
+$choose-elements-toggle-locker-icon-toggle-off: $gray-500;
+$choose-elements-toggle-locker-icon-toggle-on: $main-white;
+$comment-section-background-new: $indigo-50;
+$comment-section-comment-actions-default: $indigo-400;
+$comment-section-comment-actions-hover: $indigo-600;
+$comment-section-comment-actions-attach-icon-hover: $main-text-primary;
+$comment-section-comment-actions-send-icon-default: $indigo-600;
+$components-detail-background-default: $main-white;
+$components-detail-header-background-default: $gray-100;
+$components-detail-header-background-hover: $gray-200;
+$components-detail-icon-default: $gray-500;
+$components-detail-icon-hover: $main-text-primary;
+$components-detail-icon-border-hover: $main-text-primary;
+$components-detail-stroke-default: $gray-200;
+$components-detail-stroke-hover: $gray-400;
+$components-fields-combobox-search-icon-hover: $main-text-primary;
+$components-fields-icon-info-default: $indigo-600;
+$components-fields-icon-isrequired-default: $error-500;
+$components-fields-increaser-background-hover: $indigo-200;
+$components-fields-increaser-background-input-focused: $indigo-50;
+$components-fields-increaser-background-pressed: $indigo-600;
+$components-fields-increaser-icon-default: $gray-400;
+$components-fields-increaser-icon-hover: $indigo-600;
+$components-fields-increaser-icon-input-focused: $indigo-600;
+$components-fields-increaser-icon-pressed: $main-white;
+$components-fields-input-background-default: $main-white;
+$components-fields-input-background-disabled: $gray-200;
+$components-fields-input-caption-warning: $error-500;
+$components-fields-input-counter-default: $gray-400;
+$components-fields-input-icon-default: $gray-400;
+$components-fields-input-label-default: $gray-400;
+$components-fields-input-stroke-default: $gray-200;
+$components-fields-input-stroke-error: $error-500;
+$components-fields-input-stroke-focused: $indigo-600;
+$components-fields-input-stroke-hover: $indigo-500;
+$components-fields-input-stroke-warning: $warning-400;
+$components-fields-input-value-default: $main-black;
+$components-fields-input-value-linked: $indigo-600;
+$components-fields-password-validator-bar-background-default: $gray-200;
+$components-fields-password-validator-bar-background-error: $error-500;
+$components-fields-password-validator-bar-background-success: $success-500;
+$components-fields-password-validator-bar-background-warning: $warning-500;
+$components-fields-password-validator-text-default: $gray-400;
+$components-fields-password-validator-text-error: $error-500;
+$components-fields-password-validator-text-success: $success-500;
+$components-fields-password-validator-text-warning: $warning-500;
+$components-fields-search-dropdown-background-default: $main-white;
+$components-fields-search-dropdown-background-left-side: $gray-50;
+$components-fields-search-input-icon-default: $gray-400;
+$components-fields-search-input-icon-input-focused: $main-text-primary;
+$components-fields-search-item-background-hover: $indigo-50;
+$components-filters-button-icon-hover: $indigo-700;
+$components-filters-extended-condition-unifier: $indigo-100;
+$components-filters-extended-condition-icon-copy-default: $gray-300;
+$components-filters-extended-condition-icon-copy-hover: $gray-800;
+$components-filters-extended-condition-icon-trash-default: $gray-300;
+$components-filters-extended-condition-icon-trash-hover: $error-500;
+$components-filters-extended-logic-operand-background-default: $indigo-50;
+$components-filters-extended-logic-operand-background-hover: $indigo-100;
+$components-filters-extended-logic-operand-text-default: $indigo-600;
+$components-filters-extended-logic-operand-unifier-default: $indigo-200;
+$components-filters-extended-logic-operand-unifier-hover: $indigo-300;
+$components-filters-fav-filter-background-default: $gray-800;
+$components-filters-fav-filter-icon-background-hover: $main-white;
+$components-filters-fav-filter-text-default: $main-white;
+$components-filters-quick-filter-border-default: $gray-300;
+$components-filters-quick-filter-border-selected: $indigo-600;
+$components-filters-quick-filter-footer-background-default: $indigo-10;
+$components-filters-quick-filter-item-default: $main-black;
+$components-filters-quick-filter-item-selected: $indigo-600;
+$components-filters-quick-filter-item-background-hover: $indigo-50;
+$components-filters-quick-filter-item-background-pressed: $indigo-100;
+$components-filters-quick-filter-item-background-pressed-selected: $indigo-200;
+$components-filters-quick-filter-item-background-selected: $indigo-50;
+$components-filters-quick-filter-item-background-selected-hover: $indigo-100;
+$components-kanban-column-title-default: $gray-500;
+$components-kanban-column-title-hover: $gray-800;
+$components-kanban-column-background-default: $gray-25;
+$components-kanban-icon-default: $indigo-400;
+$components-kanban-icon-hover: $indigo-600;
+$components-kanban-icon-background-hover: $indigo-100;
+$components-kanban-icon-background-pressed: $indigo-200;
+$components-kanban-icon-flag-added-border: $error-600;
+$components-kanban-icon-flag-added-fill: $error-200;
+$components-kanban-item-default-background-default: $main-white;
+$components-kanban-item-default-border-selected: $indigo-200;
+$components-kanban-item-flagged-background-default: $error-50;
+$components-kanban-item-flagged-background-selected: $error-100;
+$components-kanban-item-flagged-border-hover: $error-400;
+$components-kanban-item-flagged-border-selected: $error-200;
+$components-kanban-person-border-default: $gray-400;
+$components-kanban-priority-text-critical: $pink-500;
+$components-kanban-priority-text-high: $error-500;
+$components-kanban-priority-text-low: $blue-dark-500;
+$components-kanban-priority-text-medium: $warning-500;
+$components-record-background-selected: $indigo-50;
+$components-record-modified-on-default: $main-text-secondary;
+$components-record-modified-on-hover: $gray-700;
+$components-record-stroke-invisible: $main-white;
+$components-record-updating-in-progress: $actions-button-text-loading;
+$components-record-updating-success: $success-500;
+$components-table-column-name-edge-default: $gray-300;
+$components-table-column-name-edge-hover: $gray-600;
+$components-table-column-name-text-default: $gray-600;
+$components-table-column-name-text-hover: $gray-800;
+$components-table-header-background-default: $gray-50;
+$components-table-header-icon-table-settings-default: $gray-300;
+$components-table-header-icon-table-settings-hover: $gray-700;
+$components-table-row-background-even: $gray-50;
+$components-table-row-background-odd: $main-white;
+$components-table-stage-id-background-default: $gray-300;
+$components-table-stage-id-background-lost: $error-500;
+$components-table-stage-id-background-progress: $gray-700;
+$components-table-stage-id-background-win: $success-500;
+$components-table-stage-id-text-default: $main-text-primary;
+$components-table-stage-id-text-lost: $error-500;
+$components-table-stage-id-text-win: $success-500;
+$html-editor-action-panel-icon-action-panel-delete-icon-default: $error-500;
+$html-editor-action-panel-icon-action-panel-delete-icon-hover: $error-500;
+$html-editor-action-panel-icon-action-panel-delete-icon-background-hover: $error-50;
+$html-editor-action-panel-icon-action-panel-delete-icon-background-pressed: $error-200;
+$html-editor-action-panel-icon-action-panel-icon-selected: $indigo-600;
+$html-editor-action-panel-icon-action-panel-icon-background-hover: $indigo-100;
+$html-editor-action-panel-icon-action-panel-icon-background-pressed: $indigo-200;
+$html-editor-action-panel-icon-action-panel-icon-background-selected: $indigo-100;
+$html-editor-color-picker-border-hover: $gray-400;
+$html-editor-icon-default: $main-black;
+$html-editor-icon-selected: $indigo-600;
+$html-editor-icon-background-hover: $indigo-50;
+$html-editor-icon-background-pressed: $indigo-100;
+$html-editor-icon-background-pressed-selected: $indigo-200;
+$html-editor-icon-background-selected: $indigo-50;
+$html-editor-icon-background-selected-hover: $indigo-100;
+$html-editor-info-panel-background-error: $error-50;
+$html-editor-info-panel-background-info: $blue-dark-50;
+$html-editor-info-panel-background-note: $purple-50;
+$html-editor-info-panel-background-success: $success-50;
+$html-editor-info-panel-background-warning: $warning-50;
+$html-editor-info-panel-border-selected: $indigo-600;
+$html-editor-info-panel-icon-error: $error-600;
+$html-editor-info-panel-icon-info: $blue-dark-600;
+$html-editor-info-panel-icon-note: $purple-600;
+$html-editor-info-panel-icon-success: $success-600;
+$html-editor-info-panel-icon-warning: $warning-600;
+$html-editor-label-background-blue: $blue-dark-50;
+$html-editor-label-background-gray: $gray-100;
+$html-editor-label-background-green: $success-50;
+$html-editor-label-background-orange: $warning-50;
+$html-editor-label-background-purple: $purple-50;
+$html-editor-label-background-red: $error-50;
+$html-editor-label-background-task: $indigo-100;
+$html-editor-label-border-selected: $indigo-600;
+$html-editor-label-text-blue: $blue-dark-600;
+$html-editor-label-text-gray: $gray-600;
+$html-editor-label-text-green: $success-600;
+$html-editor-label-text-orange: $warning-600;
+$html-editor-label-text-purple: $purple-600;
+$html-editor-label-text-red: $error-600;
+$html-editor-label-text-task: $indigo-600;
+$html-editor-shortcut-background-default: $gray-200;
+$html-editor-shortcut-text-default: $main-text-primary;
+$html-editor-spoiler-background-default: $gray-25;
+$html-editor-spoiler-icon-background-hover: $gray-200;
+$html-editor-spoiler-icon-background-pressed: $gray-300;
+$html-editor-spoiler-text-default: $gray-700;
+$html-editor-table-cell-background-default: $main-white;
+$html-editor-table-cell-background-delete: $error-50;
+$html-editor-table-cell-background-header: $gray-200;
+$html-editor-table-cell-background-selected: $indigo-50;
+$html-editor-table-control-cell-background-default: $html-editor-table-cell-background-header;
+$html-editor-table-control-cell-background-delete: $error-300;
+$html-editor-table-control-cell-background-hover: $indigo-300;
+$html-editor-table-control-cell-border-default: $indigo-500;
+$html-editor-table-divider-default: $gray-300;
+$html-editor-table-divider-delete: $error-600;
+$html-editor-table-divider-hover: $indigo-600;
+$html-editor-table-icon-add-defalut: $indigo-700;
+$html-editor-table-icon-add-hover: $main-white;
+$html-editor-table-icon-add-background-default: $indigo-100;
+$html-editor-table-icon-add-background-hover: $indigo-600;
+$html-editor-table-icon-delete-defalut: $indigo-700;
+$html-editor-table-icon-delete-hover: $main-white;
+$html-editor-table-icon-delete-background-default: $error-100;
+$html-editor-table-icon-delete-background-hover: $error-600;
+$html-editor-tag-text: $gray-800;
+$html-editor-tag-background-default: $gray-100;
+$html-editor-tag-background-hover: $gray-200;
+$html-editor-tag-background-selected: $indigo-25;
+$html-editor-tag-border-selected: $indigo-600;
+$main-app-background: $gray-100;
+$main-logo-main: $turquoise-500;
+$main-text-linked: $indigo-600;
+$main-text-primary-white: $main-white;
+$main-text-subtitle: $gray-blue-500;
+$navigation-breadcrumps-record-header-current: $main-text-primary;
+$navigation-breadcrumps-record-header-previous: $main-text-secondary;
+$navigation-breadcrumps-record-header-previous-hover: $gray-600;
+$navigation-breadcrumps-record-header-icon-copy-link-default: $indigo-400;
+$navigation-breadcrumps-record-header-icon-copy-link-hover: $indigo-600;
+$navigation-breadcrumps-record-header-icon-copy-link-background-hover: $indigo-100;
+$navigation-breadcrumps-record-header-icon-copy-link-background-pressed: $indigo-200;
+$navigation-breadcrumps-record-header-icon-link-copied-default: $success-500;
+$navigation-breadcrumps-record-header-icon-link-copied-background-hover: $success-100;
+$navigation-breadcrumps-record-header-icon-link-copied-background-pressed: $success-200;
+$navigation-breadcrumps-system-designer-icon-default: $gray-400;
+$navigation-breadcrumps-system-designer-icon-hover: $main-text-primary;
+$navigation-breadcrumps-system-designer-item-default: $gray-400;
+$navigation-breadcrumps-system-designer-item-hover: $main-text-primary;
+$navigation-menu-background-disabled: $gray-100;
+$navigation-menu-background-hover: $indigo-50;
+$navigation-menu-background-selected: $indigo-100;
+$navigation-menu-background-selected-hover: $indigo-200;
+$navigation-menu-border-selected: $indigo-600;
+$navigation-menu-icon-error: $error-500;
+$navigation-menu-text-disabled: $gray-400;
+$navigation-menu-text-selected: $indigo-600;
+$navigation-navigation-panel-item-default: $main-black;
+$navigation-navigation-panel-item-selected: $indigo-600;
+$navigation-navigation-panel-item-background-hover: $indigo-50;
+$navigation-navigation-panel-item-background-pressed: $indigo-100;
+$navigation-navigation-panel-item-background-pressed-selected: $indigo-200;
+$navigation-navigation-panel-item-background-selected: $indigo-50;
+$navigation-navigation-panel-item-background-selected-hover: $indigo-100;
+$navigation-pagination-item-background-hover: $indigo-50;
+$navigation-pagination-item-background-selected: $indigo-200;
+$navigation-tab-page-editor-active: $indigo-600;
+$navigation-tab-page-editor-counter: $error-600;
+$navigation-tab-page-editor-hover: $indigo-300;
+$navigation-tab-section-designer-icon-default: $indigo-400;
+$navigation-tab-section-designer-icon-hover: $indigo-600;
+$navigation-tab-section-designer-icon-invisible: $main-white;
+$navigation-tree-icons-arrow-default: $gray-400;
+$navigation-tree-icons-arrow-hover: $main-text-primary;
+$navigation-tree-icons-background-selected: $gray-200;
+$navigation-tree-icons-folder-icon-default: $indigo-600;
+$navigation-tree-icons-icon-default: $gray-400;
+$navigation-tree-icons-icon-hover: $gray-600;
+$navigation-tree-icons-icon-selected: $main-black;
+$navigation-tree-icons-stroke-hover: $gray-300;
+$navigation-tree-icons-stroke-selected-hover: $main-black;
+$navigation-tree-item-background-hover: $indigo-50;
+$navigation-tree-item-background-selected: $indigo-100;
+$navigation-tree-item-background-selected-hover: $indigo-200;
+$other-divider-default: $gray-200;
+$other-system-name-default: $gray-600;
+$other-system-name-background-default: $gray-100;
+$popup-elements-context-menu-background: $gray-900;
+$popup-elements-context-menu-action-background-hover: $gray-600;
+$popup-elements-hint-background: $gray-800;
+$popup-elements-modal-window-background: $main-white;
+$popup-elements-modal-window-close-icon-default: $gray-400;
+$popup-elements-modal-window-close-icon-hover: $gray-600;
+$popup-elements-toast-text: $main-white;
+$popup-elements-toast-background-default: $gray-900;
+$popup-elements-toast-background-error: $error-500;
+$popup-elements-toast-button-hover: $gray-700;
+$popup-elements-toast-close-icon-default: $gray-100;
+$popup-elements-toast-spinner-default: $popup-elements-toast-close-icon-default;
+$popup-elements-tooltip-background: $main-white;
+$popup-elements-tooltip-border: $gray-300;
+$progress-indicators-progress-bar-background-default: $indigo-100;
+$progress-indicators-progress-bar-background-progress: $indigo-600;
+$progress-indicators-progress-bar-close-icon-default: $main-text-secondary;
+$progress-indicators-progress-bar-close-icon-hover: $main-text-primary;
+$progress-indicators-progress-bar-close-icon-background-hover: $gray-200;
+$progress-indicators-spinner-default: $gray-400;
+$progress-indicators-spinner-secondary: $main-white;
+$scroller-background-default: $gray-300;
+$section-master-cell-empty-background-captured-filler: $gray-50;
+$section-master-cell-empty-background-captured-hover: $indigo-50;
+$section-master-cell-empty-border-default: $gray-300;
+$section-master-cell-filled-background-default: $indigo-25;
+$section-master-cell-filled-border-default: $indigo-200;
+$section-master-cell-filled-border-hover: $indigo-600;
+$section-master-cell-filled-icon-actions-default: $indigo-400;
+$section-master-cell-filled-icon-actions-hover: $indigo-600;
+$section-master-cell-filled-icon-draggable-default: $indigo-400;
+$section-master-cell-filled-text-default: $indigo-800;
+$section-master-field-background-captured-filler: $gray-50;
+$section-master-field-background-hover: $indigo-50;
+$section-master-field-icon-draggable-default: $gray-400;
+
+
+//font mixins
+/*text style*/
+
+@mixin h1-•-bold {
+  font-size: 56px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 64px;
+}
+
+@mixin h1-•-regular {
+  font-size: 56px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 64px;
+}
+
+@mixin h2-•-bold {
+  font-size: 48px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 56px;
+}
+
+@mixin h2-•-regular {
+  font-size: 48px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 56px;
+}
+
+@mixin h3-•-bold {
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 48px;
+}
+
+@mixin h3-•-regular {
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 48px;
+}
+
+@mixin h4-•-bold {
+  font-size: 36px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 44px;
+}
+
+@mixin h4-•-regular {
+  font-size: 36px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 44px;
+}
+
+@mixin h5-•-bold {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 40px;
+}
+
+@mixin h5-•-regular {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 40px;
+}
+
+@mixin h6-•-bold {
+  font-size: 28px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 36px;
+}
+
+@mixin h6-•-regular {
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 36px;
+}
+
+@mixin bold-24px {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 32px;
+}
+
+@mixin regular-24px {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 32px;
+}
+
+@mixin bold-22px {
+  font-size: 22px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 30px;
+}
+
+@mixin regular-22px {
+  font-size: 22px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 30px;
+}
+
+@mixin bold-20px {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 28px;
+}
+
+@mixin regular-20px {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 28px;
+}
+
+@mixin bold-18px {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 24px;
+}
+
+@mixin regular-18px {
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+}
+
+@mixin underline-18px {
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+}
+
+@mixin bold-16px {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 22px;
+}
+
+@mixin regular-16px {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 22px;
+}
+
+@mixin underline-16px {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 22px;
+}
+
+@mixin uppercase16px {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+@mixin bold-14px {
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 20px;
+}
+
+@mixin regular-14px {
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+}
+
+@mixin underline14px {
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+}
+
+@mixin uppercase-14px {
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin regular-mono-14px {
+  font-size: 14px;
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+}
+
+@mixin italic-14px {
+  font-size: 14px;
+  font-family: Inter;
+  font-style: italic;
+  letter-spacing: 0em;
+  line-height: 20px;
+}
+
+@mixin bold-12px {
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 16px;
+}
+
+@mixin regular-12px {
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 16px;
+}
+
+@mixin underline-12px {
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 16px;
+}
+
+@mixin uppercase-12px {
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@mixin bold-uppercase-12px {
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@mixin regular-10px {
+  font-size: 10px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 14px;
+}
+
+@mixin html-editor-h1-•-medium {
+  font-size: 28px;
+  font-family: Inter;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 36px;
+}
+
+@mixin html-editor-h2-•-medium {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 32px;
+}
+
+@mixin html-editor-h3-•-semibold {
+  font-size: 22px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 30px;
+}
+
+@mixin html-editor-h4-•-semibold {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 28px;
+}
+
+@mixin html-editor-h5-•-bold {
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 24px;
+}
+
+@mixin html-editor-h6-•-bold {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 22px;
+}

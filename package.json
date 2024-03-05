@@ -1,0 +1,48 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "D1i",
+  "license": "",
+  "private": false,
+  "homepage": "https://github.com/D1i/testlib2.git",
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "react": "^18.2.0",
+    "webpack": "^5.90.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/preset-create-react-app": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-webpack5": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "@types/react": "^18.2.63",
+    "@types/react-dom": "^18.2.19",
+    "@webpack-cli/generators": "^3.0.7",
+    "css-loader": "^6.10.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "scss": "^0.2.4",
+    "storybook-addon-react-view": "^0.0.2",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "description": "My webpack project",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "storybook": "storybook dev -p 6006"
+  }
+}
