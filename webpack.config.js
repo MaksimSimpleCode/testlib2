@@ -53,9 +53,10 @@ const config = {
     resolve: {
         extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
     },
-    externals: [
-        'src/components/button'
-    ]
+    externals: {
+        Button: 'src/components/button',
+        typescript: 'typescript'
+    }
 };
 
 module.exports = () => {
