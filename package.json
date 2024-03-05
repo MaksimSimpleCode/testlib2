@@ -1,14 +1,16 @@
 {
   "name": "sb-test-new-webpack-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.ts",
   "author": "D1i",
   "license": "",
   "private": false,
   "homepage": "https://github.com/D1i/testlib2.git",
   "dependencies": {
+    "@react-leaflet/core": ">=1.0.0 <1.1.0 || ^1.1.1",
     "classnames": "^2.3.2",
     "react": "^18.0.10",
+    "react-leaflet": ">=3.1.0 <3.2.0 || ^3.2.1",
     "react-scripts": "^5.0.1",
     "webpack": "^5.90.3"
   },
