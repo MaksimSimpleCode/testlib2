@@ -2,9 +2,6 @@
 import style from './style.module.scss';
 import classNames from "classnames";
 import {Icon} from "../../icon/icon";
- import {useMemo} from "react";
-
- import {SaleBridgeUIKit} from "../../../dist/sale-bridge-ui-kit"
 
 type Props = {
     text: string;

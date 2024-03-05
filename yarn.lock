@@ -7767,6 +7767,15 @@ sass@^1.71.1:
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
 
+sb-test-new-webpack-config@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/sb-test-new-webpack-config/-/sb-test-new-webpack-config-1.0.0.tgz#d59c6009580187d26aa3a6342d71be83669ad556"
+  integrity sha512-PfQIzzvA5mB8u+muAe/NayZqdREkjiA1axEQWLFXHW9sWWS3+0PWoevj1HIeywUnTVUzWbkggO5maG2ITJCVig==
+  dependencies:
+    classnames "^2.5.1"
+    react "^18.2.0"
+    webpack "^5.90.3"
+
 schema-utils@^3.0.0, schema-utils@^3.1.1, schema-utils@^3.2.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/schema-utils/-/schema-utils-3.3.0.tgz"
