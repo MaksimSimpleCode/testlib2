@@ -29,9 +29,9 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(ts|tsx)$/i,
-                loader: 'ts-loader',
-                exclude: ['/node_modules/'],
+                test: /\.(ts|tsx)?$/,
+                use: ['ts-loader'],
+                exclude: '/node_modules/',
             },
             {
                 test: /\.css$/i,
@@ -86,12 +86,10 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
+        extensions: ['.tsx', '.ts', '.jsx', '.js'],
     },
     externals: {
-        Button: 'src/components/button',
-        typescript: 'typescript',
-        "ts-loader": "ts-loader",
+        react: 'react'
     }
 };
 
