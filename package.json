@@ -1,6 +1,6 @@
 {
   "name": "sb-test2-new-webpack-config",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.ts",
   "author": "D1i",
   "license": "",
@@ -41,10 +41,12 @@
     "webpack": "^5.90.3"
   },
   "peerDependencies": {
-    "react":"*",
-    "react-dom":"*"
+    "react": "*",
+    "react-dom": "*"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "description": "My webpack project",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
