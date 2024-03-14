@@ -21,7 +21,8 @@ const config = {
     plugins: [
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-    ],
+        isProduction && new MiniCssExtractPlugin()
+    ].filter(Boolean),
     module: {
         rules: [
             {
@@ -30,12 +31,12 @@ const config = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.css$/i,
-                use: [stylesHandler,'css-loader'],
+                test: /\.css/,
+                use: ['style-loader','css-loader'],
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [stylesHandler, 'css-loader', 'sass-loader'],
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
@@ -90,14 +91,15 @@ const config = {
 };
 
 module.exports = () => {
-    if (isProduction) {
-        config.mode = 'production';
+
+    // if (isProduction) {
+    //     config.mode = 'production';
         
-        config.plugins.push(new MiniCssExtractPlugin());
+    //     config.plugins.push(new MiniCssExtractPlugin());
         
         
-    } else {
-        config.mode = 'development';
-    }
+    // } else {
+    //     config.mode = 'development';
+    // }
     return config;
 };
