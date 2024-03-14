@@ -3,7 +3,7 @@ import style from './style.module.scss';
 import classNames from "classnames";
 import {Icon} from "../../icon/icon";
 
-export interface Props {
+export type Props ={
     text: string;
     size: "small" | "medium" | "large";
     variant: "default" | "backless" | "primary" | "success" | "secondary" | "successSecondary" | "danger" | "dangerSecondary" | "disabled"; // background color
