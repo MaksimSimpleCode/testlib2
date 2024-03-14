@@ -1,6 +1,7 @@
 import {Meta} from "@storybook/react";
+import Button from "./button";
 
-import {Button} from './button';
+
 
 const meta: Meta<typeof Button> = {
     title: 'Действия/Кнопки/Кнопка',

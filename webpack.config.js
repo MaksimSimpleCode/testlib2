@@ -13,14 +13,10 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 const config = {
     entry: './src/index.ts',
     output: {
+        filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'sale-bridge-ui-kit.js',
         clean: true,
-        globalObject: 'this',
-        library: {
-            name: 'SaleBridgeUIKit',
-            type: 'umd',
-        }
+        libraryTarget :"umd"
     },
     plugins: [
         // Add your plugins here
@@ -86,7 +82,7 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.jsx', '.js'],
+        extensions: ['.ts', '.tsx',  '.jsx', '.js'],
     },
     externals: {
         react: 'react'

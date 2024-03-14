@@ -3,7 +3,7 @@ import style from './style.module.scss';
 import classNames from "classnames";
 import {Icon} from "../../icon/icon";
 
-type Props = {
+export interface Props {
     text: string;
     size: "small" | "medium" | "large";
     variant: "default" | "backless" | "primary" | "success" | "secondary" | "successSecondary" | "danger" | "dangerSecondary" | "disabled"; // background color
@@ -16,7 +16,7 @@ type Props = {
 
 const cx = classNames.bind(style);
 
-export function Button(props: Props) {
+const  Button =(props: Props) =>{
 
     const styles = cx({
         [style.button]: true,
@@ -36,3 +36,6 @@ export function Button(props: Props) {
         </button>
     )
 }
+
+
+export default Button;
